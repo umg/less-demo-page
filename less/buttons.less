@@ -1,0 +1,38 @@
+// Buttons
+// -------------------------
+.btn {
+    #gradient > .vertical(lighten(@btnColour, 10%), @btnColour);
+    .border-radius(3px);
+    .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+    color: #fff;
+    background-color: @btnColour;
+    font-weight: bold;
+    font-size: @baseFontSize;
+    font-family: @baseFontFamily;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid darken(@btnColour, 10%);
+    border-bottom-color: darken(@btnColour, 20%);
+    padding: 4px 14px;
+    margin-bottom: 0;
+
+    &:hover {
+        .transition(background-position .1s linear);
+        color: #eee;
+        background-position: 0 -15px;
+    }
+
+    &:active {
+        .box-shadow(~"inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)");
+        background-color: darken(@btnColour, 10%);
+        background-image: none;
+    }
+
+    &:visited {
+        color: #fff;
+    }
+}

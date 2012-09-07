@@ -1,9 +1,9 @@
 // Global header
 // -------------------------
 .global-header {
-    #gradient > .vertical(lighten(@headerBgColour, 10%), @headerBgColour);
+    #gradient > .vertical(lighten(@headerBackground, 10%), @headerBackground);
     .box-shadow(~"1px 1px 3px #bbb");
-    background-color: @headerBgColour;
+    background-color: @headerBackground;
     margin-bottom: 20px;
 
     // Logo
@@ -36,13 +36,13 @@
             font-size: @baseFontSize + 2;
             text-align: center;
             text-decoration: none;
-            border-top: 1px solid lighten(@headerBgColour, 10%);
+            border-top: 1px solid lighten(@headerBackground, 10%);
             display: block;
             padding: 6px;
 
             &:hover {
                 .box-shadow(~"inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)");
-                background-color: lighten(@headerBgColour, 5%);
+                background-color: lighten(@headerBackground, 5%);
             }
 
             &:active {
@@ -51,7 +51,7 @@
             }
 
             &:nth-child(2n-1) {
-                border-right: 1px solid lighten(@headerBgColour, 10%);
+                border-right: 1px solid lighten(@headerBackground, 10%);
             }
         }
     }

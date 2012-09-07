@@ -13,38 +13,38 @@ button,
 input,
 select,
 textarea {
-    color: @baseFontColour;
+    color: @textColor;
 }
 
 body {
-    color: @baseFontColour;
+    color: @textColor;
     font-size: @baseFontSize;
     font-family: @baseFontFamily;
-    line-height: 1.4;
-    background-color: #dbdbdb;
+    line-height: @baseLineHeight;
+    background-color: @bodyBackground;
 }
 
 // Links
 a {
-    color: @linkColour;
+    color: @linkColor;
 
     &:hover {
-        color: @linkHoverColour;
+        color: @linkColorHover;
     }
 
     &:visited {
-        color: lighten(@linkColour, 5%);
+        color: @linkColorVisited;
     }
 }
 
 // Selection highlight
 ::-moz-selection {
-    background: #b3d4fc;
+    background: @selectionHightlightColor;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: @selectionHightlightColor;
     text-shadow: none;
 }
 

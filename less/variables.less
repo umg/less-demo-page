@@ -1,32 +1,31 @@
 // Variables
 // -------------------------
 
-// Brand colour
-@brandColour:               #417dae;
+// Scaffolding
+@brandColor:                #417dae;
+@bodyBackground:            #dbdbdb;
+@headerBackground:          #222;
+@footerBackground:          #6a6a6a;
+@textColor:                 #222;
 
-// Base font family
-@baseFontFamily:            'source_sans_proregular', sans-serif;
+// Links
+@linkColor:                 @textColor;
+@linkColorHover:            @brandColor;
+@linkColorVisited:          lighten(@linkColor, 5%);
 
-// Base font colour
-@baseFontColour:            #222;
+// Buttons
+@btnColor:                  @brandColor;
 
-// Base font size
+// Typography
+@sansFontFamily:            'source_sans_proregular', sans-serif;
+@serifFontFamily:           serif;
+
 @baseFontSize:              14px;
+@baseFontFamily:            @sansFontFamily;
+@baseLineHeight:            1.4;
 
-// Link colour
-@linkColour:                @baseFontColour;
+// Images paths
+@imgPath:                   "../img/";
 
-// Link hover colour
-@linkHoverColour:           @brandColour;
-
-// Button colour
-@btnColour:                 @brandColour;
-
-// Base /images folder path
-@baseImagesPath:            '../img/';
-
-// Header background colour
-@headerBgColour:            #222;
-
-// Footer background colour
-@footerBgColour:            #6a6a6a;
+// Selection highlight
+@selectionHightlightColor:  #b3d4fc;

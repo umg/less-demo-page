@@ -6,7 +6,7 @@
     .featured {
         .box-shadow(~"1px 1px 3px #bbb");
         color: #fff;
-        background: @brandColour url("@{baseImagesPath}featured-bg.jpg") no-repeat top right;
+        background: @brandColor url("@{imgPath}featured-bg.jpg") no-repeat top right;
         margin-bottom: 20px;
         padding: 20px 20px 17px;
 
@@ -24,7 +24,7 @@
         h2 {
             font-weight: normal;
             font-size: 30px;
-            line-height: 1.2;
+            line-height: @baseLineHeight - .2;
             margin: 0 0 30px;
         }
 
